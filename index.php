@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(isset($_SESSION['userId'])){ header('location:login.php');}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +38,7 @@
           <a class="nav-link " href="restaut.php" tabindex="-1">restaurat</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="admin/login.php" tabindex="-1">administrateur</a>
+          <a class="nav-link " href="php/deconnexion.php" tabindex="-1">deconnexion</a>
         </li>
       </ul>
     </div>

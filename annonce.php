@@ -51,6 +51,7 @@ if(isset($_SESSION['userId'])){ header('location:login.php');}
   <h5><a class="nav-link"id="navpiece" href="declaration.php">declarer une piece</a></h5>
   <h5><a class="nav-link"id="navpiece" href="rech.php">rechercher une piece</a></h5>
   <h5><a class="nav-link"id="navpiece" href="annonce.php">annoncer</a></h5>
+
 </nav>
 
  <div class="alert alert-light" role="alert">
@@ -74,14 +75,17 @@ if(isset($_SESSION['userId'])){ header('location:login.php');}
           <div class="form-group">
               <label for="piece">Numero piece</label>
               <input type="text"
-                class="form-control" name ="numeroPiece" placeholder="nunero de piece" >
+                class="form-control" name ="numeroPiece" placeholder="numero ou nom de ce que tu as perdu" >
           </div>
             <div class="form-group">
               <label for="telephone">telephone</label>
               <input type="number"
-                class="form-control" name="telephone" placeholder="numero telephene du ramasseur">
+                class="form-control" name="telephone" placeholder="votre numero téléphone">
+                <label for="piece">commentaire</label>
+                <textarea name="commentaire" id="#" class="form-control" value="des informations plus detaillées de l'annonce">
+                  </textarea><br>
             </div><br>
-            <button class="btn btn-success" type="submit" name="valider">declarer</button>
+            <button class="btn btn-success" type="submit" name="valider">annoncer</button>
             <button class="btn btn-primary" type="submit" name="valider">annuler</button>
         </form>
       </div>

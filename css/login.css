@@ -1,0 +1,90 @@
+body
+{
+    background-color: green;
+}
+.log
+{
+    background-image: url('../image/login.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 15cm; 
+}
+.init
+{
+    background-color: blue;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+}
+.init h3
+{
+   color: white; 
+}
+.body
+{
+    background-color:#green;
+    background-color: transparent;
+}
+
+#container form
+{
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 200px;
+    padding: 20px;
+    width: 8cm;
+    height: 6cm;
+}
+#form
+{
+    margin-left: 20cm;
+}
+form
+{
+    margin-left: 5cm;
+}
+form input
+{
+    width: 6cm;
+    height: 1cm;
+    border-radius: 10px;
+}
+.etatrec
+{
+    background-color:blue;
+    color: white;
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+
+}
+.reclamations
+{
+    margin-left: 200px;
+}
+.reclamations a
+{
+    margin-left: 20px;
+    text-decoration: none;
+    padding:30px ;
+    background-color: blue;
+    color: white;
+}
+.reclamations.reclamation1
+{
+    background-color: blue;
+    padding: 15cm;
+    color: white;
+}
+.button
+{
+    background-color: rgb(127, 255, 146);
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 6cm;
+    height: 1cm;
+}

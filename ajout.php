@@ -29,7 +29,7 @@ if(!empty($_POST['typePiece']) and !empty($_POST['numeroPiece']) and !empty($_PO
                         erreur
                      </div>";
           $_SESSION['message1'] = $message1;
-          header("Location:declaration.php");
+          header("Location:index.php");
 
      }
 }
@@ -39,7 +39,7 @@ else
                     Veuillez remplir les champs 
                  </div>";
                  $_SESSION['message1'] = $message1;
-                header("Location:declaration.php");
+                header("Location:index.php");
 
 }
 

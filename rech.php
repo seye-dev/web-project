@@ -1,5 +1,6 @@
 <?php
 session_start();
+//if(!isset($_SESSION['userId'])){ header('location:login.php');}
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +43,8 @@ session_start();
 </div><br><br>
  <nav class="nav bg-light" id="navpiece">
  <h5> <a class="nav-link"id="navpiece" href="declaration.php">declarer une piece</a></h5>
-  <h5><a class="nav-link"id="navpiece" href="rech.php">rechercher une piece</a></h5>  
+  <h5><a class="nav-link"id="navpiece" href="rech.php">rechercher une piece</a></h5> 
+  <h5><a class="nav-link"id="navpiece" href="annonce.php">annoncer</a></h5>
 </nav>
 </nav><br>
 

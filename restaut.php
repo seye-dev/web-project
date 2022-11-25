@@ -1,46 +1,29 @@
-<!DOCTYPE html>
+<?php
+//session_start();
+//if(!isset($_SESSION['userId'])){ header('location:login.php');}
+?>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-   <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
-	<title>restaurant</title>
-  <script type="text/javascript"async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6rR7BpQkGUEdjS-jsjw7HrbtnF6Fcvec"></script>
-</head>
-<body>
-<iframe src="https://www.google.com/maps/d/u/0/embed ?mid=1b4EPC3MMWI0LSqbty5giIGSLhu-muAE&ehbc=2E312F" width="640" height="480"></iframe>
+  <head>
+    <title>Add Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-</body>
-<script  type="text/javascript" >
-  var lat=48.852969;
-  var lon=2.349903;
-  var map=null;
-  function initMap()
-{
-      map=new google.maps.Map(doument.getElementById("map")),
-      {
-        center=new google.maps.latLon(lat,lon);
-        zoom:14;
-        mapTypeId:google.maps.MapTypeId.ROADMAP;
-        mapTypeControl:true;
-        scrollwheel:false;
+    <link rel="stylesheet" type="text/css" href="sc.css" />
+    <script type="module" src="sc.js"></script>
+  </head>
+  <body>
+    <h3>restaurant</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
 
-      }
-}
-
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+   <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
 </script>
+
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

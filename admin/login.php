@@ -8,9 +8,9 @@ require("../php/info.php");
 @$connexion=$_POST['connexion'];
 
 
-if (isset($connexion))
- {
-
+if (isset($_POST['connexion']))
+{
+  
 	require("connexion.php");
 
 	$req = $con->prepare("SELECT * FROM etudiant where identifiant = ? and password =? limit 1 ");
@@ -21,8 +21,8 @@ if (isset($connexion))
 		$info = "<div class='alert alert-danger'>
             login ou mot de passe incorrect
           </div>";	
+      header("Location: login.php");
      $_SESSION["info"]= $info;
-		header("Location: login.php");
 	}
 
 	else
@@ -30,9 +30,9 @@ if (isset($connexion))
     $info = "<div class='alert alert-success'>
     connecté
   </div>";
-		$_SESSION["useradmin"] = $reponse["identifiant"];
-    $_SESSION["passe"] = $reponse["password"];
-		header("Location:index.php");
+    $_SESSION["userId"] = $reponse["id"];
+		$_SESSION["user"] = $reponse;
+		//header("Location:index.php");
 	 
 	}
 
