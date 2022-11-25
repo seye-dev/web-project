@@ -1,0 +1,42 @@
+
+input
+{
+	width: 40%;
+	height: 1cm;
+}
+footer a
+{
+	text-decoration: none;
+	font: italic;
+	color: black;
+}
+#copy a
+{
+	text-decoration: none;
+}
+.titreindex
+{
+	background-color: blue;
+	padding: 10px 10px;
+	margin-left: 200px;
+	color: white;
+	width: 60%;
+	text-align: center;
+}
+.faculte
+{
+	background-color: blue;
+	margin-left: 200px;
+	padding: 20px 10px;
+	color: white;
+	width: 60%;
+	text-align: center;
+}
+.vote
+{
+	display: flex;
+}
+.card
+{
+	display: flex;
+}

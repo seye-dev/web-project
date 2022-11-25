@@ -1,0 +1,39 @@
+section
+{
+	 /* background-image: url('/../../memoire/image/logo.jpg');*/
+	 background-repeat: no-repeat;
+	 background-image:top;
+
+}
+.header
+{
+	display: flex;
+	background-color: lightgray;
+	padding: 10px;
+	
+}
+
+.header a
+{
+	margin-left: 50px;
+	display: flex;
+	margin-left: 100px;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: sans-serif;
+	color: white;
+	align-items: center;
+}
+
+strong
+{
+	color: red;
+}
+
+footer
+{
+	color: blue;
+	padding: 10px;
+}
+
+

@@ -1,0 +1,31 @@
+h3
+{
+    color: blue;
+    margin-left: 180px;
+}
+h5
+{
+    color: blue;
+    text-align: center;
+    text-align: center;
+}
+p
+{
+    text-align: center;
+}
+form
+{
+    width: 40%;
+    height: 80%;
+    margin-left: 200px;
+}
+a
+{
+    text-decoration: none;
+    font-size:20px ;
+    color:white ;
+}
+div.card shadow-sm
+{
+    width: 60;
+}

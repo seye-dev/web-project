@@ -1,0 +1,18 @@
+.header
+{
+	display: flex;
+	background-color: lightblue;
+	padding: 10px;	
+}
+.header .a
+{
+	margin-left: 200px;
+}
+.header .a a
+{
+	text-decoration: none;
+	font-size: 30px;
+	color: while;
+	padding: 50px;
+	color: white;
+}
